@@ -1,0 +1,6 @@
+{
+  "pdf_path": "D:\\VS CODE\\ICMR_RAG\\pdfs\\1756458272_digi-care-proje_29-08-25.pdf",
+  "chunk_size": 1000,
+  "chunk_overlap": 150,
+  "embedding_model": "nomic-embed-text:v1.5"
+}

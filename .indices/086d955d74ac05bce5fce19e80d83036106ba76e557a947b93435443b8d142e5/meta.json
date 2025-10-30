@@ -1,0 +1,6 @@
+{
+  "pdf_path": "D:\\VS CODE\\ICMR_RAG\\pdfs\\hindi_test_pdf.pdf",
+  "chunk_size": 1000,
+  "chunk_overlap": 150,
+  "embedding_model": "bge-m3:latest"
+}

@@ -185,8 +185,8 @@ def load_or_build_index(
         return build_index_run(pdf_path, index_dir, chunk_size, chunk_overlap, embed_model_name)
 
 # ----------------- model, prompt, and pipeline -----------------
-llm = ChatOpenAI(base_url="http://127.0.0.1:11434/v1", api_key="Ollama", model="llama3.2:latest", temperature=0.8)
-
+# llm = ChatOpenAI(base_url="http://127.0.0.1:11434/v1", api_key="Ollama", model="llama3.2:latest", temperature=0.8)
+llm = ChatOpenAI(base_url="https://l9tcplt7-11434.inc1.devtunnels.ms/", api_key="Ollama", model="llama3.2:latest", temperature=0.8)
 prompt = ChatPromptTemplate.from_messages([
     ("system", """Answer ONLY if the question is related to ICMR (Indian Council of Medical Research) and the information is explicitly found in the provided context.
       If the question is not related to ICMR, or the answer is not in the context, or if it involves writing code, making calculations, or any unrelated tasks, respond ONLY with 'I don't know.
@@ -294,7 +294,7 @@ if 'message_history' not in st.session_state:
 # **************************************** Sidebar UI *********************************
 
 st.sidebar.title('START NEW CHAT')
-
+    
 if st.sidebar.button('New Chat'):
     reset_chat()
 
